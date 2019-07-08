@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
 <head>
 <title>Semantic AI - Light Theme</title>
@@ -7,23 +8,130 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/b43c34d93e.js"></script>
-<link rel="stylesheet" href="/css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/light-style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<div class="container">
-		<section id="dark-theme">
-			<div class="row pt-5">
-				<div class="col-md-12">
-					<h2>Light Theme</h2>
+		<div class="row pt-5">
+			<div id="light-widget" class="col-md-6">
+				<div class="row">
+					<div class="col-md-12 d-flex justify-content-between pt-3">
+						<h1 class="">Inbox</h1>
+						<a href="#" id="elipsis"><i class="fas fa-ellipsis-v"></i></a>
+					</div>
+				</div>
+				<div class="row pt-3">
+					<div class="col-9">
+						<ul id="light-theme-btns">
+							<li id="flagged" class="text-center">
+								<a href="#" class="btn d-block"><i class="fas fa-flag"></i> Flagged</a>
+							</li>
+							<li id="archive" class="text-center">
+								<a href="#" class="btn d-block"><i class="fas fa-archive"></i> Archived</a>
+							</li>
+							<li id="map" class="text-center">
+								<a href="#" class="btn d-block"><i class="fas fa-globe-americas"></i> Map</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-3">
+						<div class="btn-group float-right">
+							<button type="button" class="btn btn-primary btn-filter dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-filter"></i> Filters</button>
+							 <div class="dropdown-menu dropdown-menu-right p-3">
+							    <form id="filters">
+							    	 <div class="form-group dropdown-submenu">
+							    	 	<label class="sr-only" for="inlineFormInputGroup">Search</label>
+									      <div class="input-group mb-2">
+									        <div class="input-group-prepend">
+									          <div class="input-group-text"><i class="fas fa-search"></i></div>
+									        </div>
+									        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Search term">
+									      </div>
+							    	 	<label for="form-control">Time Range</label>
+							    	 	<select class="form-control mb-2">
+  											<option>All</option>
+  											<option>Last 30 Days</option>
+  											<option>Last 60 Days</option>
+										</select>
+										<label for="form-control">Sort By</label>
+							    	 	<select class="form-control">
+  											<option>Newest</option>
+  											<option>Oldest</option>
+										</select>
+							    	 </div>
+							    </form>
+  							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-3">
+					<div id="inbox" class="col-md-12">
+						<div class="post pb-4">
+							<div class="d-flex flex-row pb-2">
+								<div class="pr-3">
+									<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"><defs><style>.cls-1{fill:#666;}</style></defs><title>facebook-logo</title><path id="Facebook_alt_" data-name="Facebook (alt)" class="cls-1" d="M60,10A10.36,10.36,0,0,0,50,0H10A10.36,10.36,0,0,0,0,10V50A10.36,10.36,0,0,0,10,60H30V37.33H22.67v-10H30V23.44c0-6.72,5-12.77,11.25-12.77h8.08v10H41.25c-.88,0-1.92,1.07-1.92,2.68v4h10v10h-10V60H50A10.36,10.36,0,0,0,60,50Z"/></svg>
+								</div>
+								<h2 class="name align-self-end m-0">Salima</h2>
+							</div>
+							<h3 class="blue-text">Post</h3>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu quam ut justo iaculis bibendum in ac massa. Aliquam vel lorem velit. Vestibulum non consectetur lacus, vel molestie dui...</p>
+							<ul class="post-icons">
+								<li><a href="#"><i class="fas fa-flag active"></i></a></li>
+								<li><a href="#"><i class="fas fa-plus"></i></a></li>
+								<li><a href="#"><i class="fas fa-archive"></i></a></li>
+								<li><a href="#"><i class="fas fa-edit"></i></a></li>
+								<li><a href="#"><i class="fas fa-trash-alt"></i></a></li>
+							</ul>
+						</div>
+						<div class="post pt-4 pb-4">
+							<div class="d-flex flex-row pb-2">
+								<div class="social-icon pr-3">
+									<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"><defs><style>.cls-1{fill:#666;}</style></defs><title>skype-logo</title><path id="Skype" class="cls-1" d="M57.5,34.34A28.14,28.14,0,0,0,57.84,30,27.84,27.84,0,0,0,30,2.16a28.37,28.37,0,0,0-4.35.34A16.83,16.83,0,0,0,2.5,25.66,28.24,28.24,0,0,0,2.16,30,27.83,27.83,0,0,0,30,57.83a28.24,28.24,0,0,0,4.34-.33A16.83,16.83,0,0,0,57.5,34.34ZM43.22,42.66a11.52,11.52,0,0,1-5.17,4,20.52,20.52,0,0,1-8,1.43,19.31,19.31,0,0,1-9.19-2,12,12,0,0,1-4.19-3.77A8.22,8.22,0,0,1,15,37.74a3,3,0,0,1,1-2.28,3.48,3.48,0,0,1,2.52-1,3.14,3.14,0,0,1,2.11.74,5.52,5.52,0,0,1,1.45,2.15,13.57,13.57,0,0,0,1.53,2.74,5.94,5.94,0,0,0,2.29,1.8,9.06,9.06,0,0,0,3.9.71,9.34,9.34,0,0,0,5.4-1.43,4.16,4.16,0,0,0,2-3.53A3.5,3.5,0,0,0,36.16,35a7.31,7.31,0,0,0-2.88-1.62q-1.8-.57-4.8-1.2a37.13,37.13,0,0,1-6.77-2.06,10.91,10.91,0,0,1-4.36-3.23,8,8,0,0,1-1.62-5.11,8.34,8.34,0,0,1,1.71-5.16,10.62,10.62,0,0,1,4.93-3.46,21.53,21.53,0,0,1,7.54-1.2,20.09,20.09,0,0,1,6,.79,13.26,13.26,0,0,1,4.22,2.13,9.22,9.22,0,0,1,2.45,2.8,6.11,6.11,0,0,1,.78,2.87,3.32,3.32,0,0,1-1,2.35,3.28,3.28,0,0,1-2.48,1,3,3,0,0,1-2.06-.63,8.27,8.27,0,0,1-1.49-2,8.83,8.83,0,0,0-2.42-3,7.51,7.51,0,0,0-4.51-1.07,8.35,8.35,0,0,0-4.66,1.17A3.33,3.33,0,0,0,23,21.12a2.7,2.7,0,0,0,.59,1.72,4.94,4.94,0,0,0,1.64,1.27,11.57,11.57,0,0,0,2.14.84c.73.21,1.94.51,3.62.9q3.17.69,5.74,1.52a18.08,18.08,0,0,1,4.39,2,8.51,8.51,0,0,1,2.85,3,9.07,9.07,0,0,1,1,4.5A9.77,9.77,0,0,1,43.22,42.66Z"/></svg>
+								</div>
+								<h2 class="name align-self-end m-0">Hamza & Achemd Chat 2017</h2>
+							</div>
+							<h3 class="blue-text">Chat</h3>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu quam ut justo iaculis bibendum in ac massa. Aliquam vel lorem velit. Vestibulum non consectetur lacus, vel molestie dui...</p>
+							<ul class="post-icons">
+								<li><a href="#"><i class="fas fa-flag active"></i></a></li>
+								<li><a href="#"><i class="fas fa-plus"></i></a></li>
+								<li><a href="#"><i class="fas fa-archive"></i></a></li>
+								<li><a href="#"><i class="fas fa-edit"></i></a></li>
+								<li><a href="#"><i class="fas fa-trash-alt"></i></a></li>
+							</ul>
+						</div>
+						<div class="post pt-4 pb-4">
+							<div class="d-flex flex-row pb-2">
+								<div class="social-icon pr-3">
+									<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 60 60"><defs><style>.cls-1{fill:#666;}</style></defs><title>skype-logo</title><path id="Skype" class="cls-1" d="M57.5,34.34A28.14,28.14,0,0,0,57.84,30,27.84,27.84,0,0,0,30,2.16a28.37,28.37,0,0,0-4.35.34A16.83,16.83,0,0,0,2.5,25.66,28.24,28.24,0,0,0,2.16,30,27.83,27.83,0,0,0,30,57.83a28.24,28.24,0,0,0,4.34-.33A16.83,16.83,0,0,0,57.5,34.34ZM43.22,42.66a11.52,11.52,0,0,1-5.17,4,20.52,20.52,0,0,1-8,1.43,19.31,19.31,0,0,1-9.19-2,12,12,0,0,1-4.19-3.77A8.22,8.22,0,0,1,15,37.74a3,3,0,0,1,1-2.28,3.48,3.48,0,0,1,2.52-1,3.14,3.14,0,0,1,2.11.74,5.52,5.52,0,0,1,1.45,2.15,13.57,13.57,0,0,0,1.53,2.74,5.94,5.94,0,0,0,2.29,1.8,9.06,9.06,0,0,0,3.9.71,9.34,9.34,0,0,0,5.4-1.43,4.16,4.16,0,0,0,2-3.53A3.5,3.5,0,0,0,36.16,35a7.31,7.31,0,0,0-2.88-1.62q-1.8-.57-4.8-1.2a37.13,37.13,0,0,1-6.77-2.06,10.91,10.91,0,0,1-4.36-3.23,8,8,0,0,1-1.62-5.11,8.34,8.34,0,0,1,1.71-5.16,10.62,10.62,0,0,1,4.93-3.46,21.53,21.53,0,0,1,7.54-1.2,20.09,20.09,0,0,1,6,.79,13.26,13.26,0,0,1,4.22,2.13,9.22,9.22,0,0,1,2.45,2.8,6.11,6.11,0,0,1,.78,2.87,3.32,3.32,0,0,1-1,2.35,3.28,3.28,0,0,1-2.48,1,3,3,0,0,1-2.06-.63,8.27,8.27,0,0,1-1.49-2,8.83,8.83,0,0,0-2.42-3,7.51,7.51,0,0,0-4.51-1.07,8.35,8.35,0,0,0-4.66,1.17A3.33,3.33,0,0,0,23,21.12a2.7,2.7,0,0,0,.59,1.72,4.94,4.94,0,0,0,1.64,1.27,11.57,11.57,0,0,0,2.14.84c.73.21,1.94.51,3.62.9q3.17.69,5.74,1.52a18.08,18.08,0,0,1,4.39,2,8.51,8.51,0,0,1,2.85,3,9.07,9.07,0,0,1,1,4.5A9.77,9.77,0,0,1,43.22,42.66Z"/></svg>
+								</div>
+								<h2 class="name align-self-end m-0">Hamza & Achemd Chat 2017</h2>
+							</div>
+							<h3 class="blue-text">Chat</h3>
+							<p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu quam ut justo iaculis bibendum in ac massa. Aliquam vel lorem velit. Vestibulum non consectetur lacus, vel molestie dui...</p>
+							<ul class="post-icons">
+								<li><a href="#"><i class="fas fa-flag active"></i></a></li>
+								<li><a href="#"><i class="fas fa-plus"></i></a></li>
+								<li><a href="#"><i class="fas fa-archive"></i></a></li>
+								<li><a href="#"><i class="fas fa-edit"></i></a></li>
+								<li><a href="#"><i class="fas fa-trash-alt"></i></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div style="background-color: #f0f0f0;" class="col-md-6">
-					content
-				</div>
-			</div>
-		</section>
+		</div>
 	</div>
+<script>
+$(document).ready(function(){
+  $('.dropdown-submenu .form-control').on("click", function(e){
+    $(this).next('option').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+</script>
 </body>
 </html>
